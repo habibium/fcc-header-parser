@@ -26,7 +26,7 @@ app.get("/api/hello", function (req, res) {
 
 app.get("/api/whoami", (req, res) => {
   const headers = req.headers;
-  console.log(headers);
+
   res.json({
     ipaddress: headers["x-real-ip"],
     language: headers["accept-language"],
